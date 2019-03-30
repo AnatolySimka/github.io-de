@@ -46,13 +46,12 @@ input {
 section {
   background: #aac;
   color: #F00;
-  font-size: 44px;
-  font-variant:
+  font-size: 30px;
   font-weight: bold;
 }
 form {
   background: #aac;
   color: #000;
-  font-size: 26px;
+  font-size: 30px;
   font-weight: bold;
 }
