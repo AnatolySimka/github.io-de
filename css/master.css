@@ -30,10 +30,10 @@ body > table > td {
   background: #aac;
 }
 button {
-  background: blau;
+  background: blue;
   border: 3px solid #0F0;
   height:36px;width:136px;
-  color: gelb;
+  color: yellow;
   font-weight: bold;
 }
 input {
