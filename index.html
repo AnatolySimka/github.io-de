@@ -36,7 +36,7 @@ document.getElementById("demo").innerHTML = "RUDI hat dieses Rätsel für Dich v
         {input.value = input.value != 'FIDO' ? 'FIDO' : 'RUDI'
         c = input.value}
         function njam(input)
-        {input.value = input.value != 'FRASS NICHT' ? 'FRASS NICHT' : 'FRASS NICHT'
+        {input.value = input.value != 'FRASS NICHT' ? 'FRASS NICHT' : 'FRASS'
         b = input.value}
         function food(input)
         {input.value = input.value != 'KÄSE' ? 'KÄSE' : 'MAUS'
@@ -49,7 +49,7 @@ document.getElementById("demo").innerHTML = "RUDI hat dieses Rätsel für Dich v
         else if (e == "AUS") {document.getElementById("smotri").innerHTML = 'SCHALTE MICH EIN!',
         document.getElementById("demo").innerHTML = 'BITTE EINSCHALTEN!'
         f = 'RÄTSEL NICHT GELÖST'}
-        else if (d == 'HUND') {document.getElementById("smotri").innerHTML = 'WAS HAT HIER EIN HUND ZU SUCHEN!!!',
+        else if (d == 'HUND') {document.getElementById("smotri").innerHTML = 'WAS HAT HIER EIN HUND ZU SUCHEN?!!!',
         document.getElementById("demo").innerHTML = 'FALSCH'
         f = 'RÄTSEL NICHT GELÖST'}
         else if (b == 'FRASS NICHT') {document.getElementById("smotri").innerHTML = 'WIESO FRASS ICH NICHT?!',
@@ -65,7 +65,7 @@ document.getElementById("demo").innerHTML = "RUDI hat dieses Rätsel für Dich v
         <dev><input type="button" id="kot" value="HUND" onclick="up(this)"></dev>
         <dev><input type="button" value="FIDO" onclick="fido(this)"></dev>
         <dev><input type="button" value="FRASS NICHT" onclick="njam(this)"></dev>
-        <dev><input type="button" value="MAUS" onclick="food(this)"></dev>'  ' <button value="ERGEBNIS" onclick="itog(this), playPause()">ERGEBNIS</button>
+      <dev><input type="button" value="MAUS" onclick="food(this)"></dev> <dev> </dev> <button value="ERGEBNIS" onclick="itog(this), playPause()">ERGEBNIS</button>
     </main>
     <section id="smotri">HIER WIRD DEINE ANTWORT ERSCHEINEN</section>
     <p></p>
