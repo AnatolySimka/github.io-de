@@ -22,50 +22,50 @@
 <script>
 document.getElementById("demo").innerHTML = "RUDI hat dieses Rätsel für Dich verfasst:";
 </script>
-      <dev><input type="button" value="ВЫКЛ." onclick="dawn(this)"></dev>
+      <dev><input type="button" value="AUS" onclick="dawn(this)"></dev>
     <p></p>
       <script>
-        a='СЫР', b='НЕ СЪЕЛ', c='RUDI', d='СОБАКА', e='ВЫКЛ.'
+        a='MAUS', b='FRASS NICHT', c='FIDO', d='HUND', e='AUS'
         function dawn(input)
-        {input.value = input.value != 'ВЫКЛ.' ? 'ВЫКЛ.' : 'ВКЛ.'
+        {input.value = input.value != 'AUS' ? 'AUS' : 'EIN'
         e = input.value}
         function up(input)
-        {input.value = input.value != 'СОБАКА' ? 'СОБАКА' : 'КОТ'
+        {input.value = input.value != 'HUND' ? 'HUND' : 'KATER'
         d = input.value}
         function fido(input)
-        {input.value = input.value != 'RUDI' ? 'RUDI' : 'FIDO'
+        {input.value = input.value != 'FIDO' ? 'FIDO' : 'RUDI'
         c = input.value}
         function njam(input)
-        {input.value = input.value != 'СЪЕЛ' ? 'СЪЕЛ' : 'НЕ СЪЕЛ'
+        {input.value = input.value != 'FRASS' ? 'FRASS' : 'FRASS NICHT'
         b = input.value}
         function food(input)
-        {input.value = input.value != 'КОЛБАСУ' ? 'КОЛБАСУ' : 'СЫР'
+        {input.value = input.value != 'KÄSE' ? 'KÄSE' : 'MAUS'
         a = input.value}
         function itog(input)
-        {if (a == 'КОЛБАСУ' && b == 'СЪЕЛ' && c == 'FIDO' && d == 'КОТ' && e == 'ВКЛ.')
-        {document.getElementById("smotri").innerHTML = 'ПРАВИЛЬНО!',
-        document.getElementById("demo").innerHTML = 'ЗАДАЧА РЕШЕНА! Теперь FIDO может полизать валерьяночки!'
-        f = 'РЕШЕНО'}
-        else if (e == "ВЫКЛ.") {document.getElementById("smotri").innerHTML = 'ВКЛЮЧИ МЕНЯ!',
-        document.getElementById("demo").innerHTML = 'ВКЛЮЧИ КНОПКУ ВКЛ.!'
-        f = 'НЕ РЕШЕНО'}
-        else if (d == 'СОБАКА') {document.getElementById("smotri").innerHTML = 'КАКАЯ СОБАКА!!!',
-        document.getElementById("demo").innerHTML = 'НЕВЕРНОЕ РЕШЕНИЕ'
-        f = 'НЕ РЕШЕНО'}
-        else if (b == 'НЕ СЪЕЛ') {document.getElementById("smotri").innerHTML = 'КАК ЭТО НЕ СЪЕЛ?!',
-        document.getElementById("demo").innerHTML = 'НЕВЕРНОЕ РЕШЕНИЕ'
-        f = 'НЕ РЕШЕНО'}
-        else if (a == 'СЫР') {document.getElementById("smotri").innerHTML = 'СЫР НЕ КАТИТ!',
-        document.getElementById("demo").innerHTML = 'НЕВЕРНОЕ РЕШЕНИЕ'
-        f = 'НЕ РЕШЕНО'}
-        else if (c == 'RUDI') {document.getElementById("smotri").innerHTML = 'RUDI НЕ ИЗ НАШЕГО ДВОРА!',
-        document.getElementById("demo").innerHTML = 'НЕВЕРНОЕ РЕШЕНИЕ'
-        f = 'НЕ РЕШЕНО'}}
+        {if (a == 'KÄSE' && b == 'FRASS' && c == 'RUDI' && d == 'KATER' && e == 'EIN')
+        {document.getElementById("smotri").innerHTML = 'RICHTIG!',
+        document.getElementById("demo").innerHTML = 'RÄTSEL GELÖST! NUN KANN RUDI BALDRIANTROPFEN LECKEN!'
+        f = 'RÄTSEL GELÖST'}
+        else if (e == "AUS") {document.getElementById("smotri").innerHTML = 'SCHALTE MICH EIN!',
+        document.getElementById("demo").innerHTML = 'BITTE EINSCHALTEN!'
+        f = 'RÄTSEL NICHT GELÖST'}
+        else if (d == 'HUND') {document.getElementById("smotri").innerHTML = 'WAS HAT HIER EIN HUND ZU SUCHEN!!!',
+        document.getElementById("demo").innerHTML = 'FALSCH'
+        f = 'RÄTSEL NICHT GELÖST'}
+        else if (b == 'FRASS NICHT') {document.getElementById("smotri").innerHTML = 'WIESO NICHT?!',
+        document.getElementById("demo").innerHTML = 'FALSCH'
+        f = 'RÄTSEL NICHT GELÖST'}
+        else if (a == 'MAUS') {document.getElementById("smotri").innerHTML = 'MÄUSE WERDEN NICHT GEFRESSEN ABER ZUM HERRN MENSCHEN GEBRACHT!',
+        document.getElementById("demo").innerHTML = 'FALSCH'
+        f = 'RÄTSEL NICHT GELÖST'}
+        else if (c == 'RUDI') {document.getElementById("smotri").innerHTML = 'RUDI KENNEN WIR NICHT!',
+        document.getElementById("demo").innerHTML = 'FALSCH'
+        f = 'RÄTSEL NICHT GELÖST'}}
       </script>
-        <dev><input type="button" id="kot" value="СОБАКА" onclick="up(this)"></dev>
+        <dev><input type="button" id="kot" value="HUND" onclick="up(this)"></dev>
         <dev><input type="button" value="RUDI" onclick="fido(this)"></dev>
-        <dev><input type="button" value="НЕ СЪЕЛ" onclick="njam(this)"></dev>
-        <dev><input type="button" value="СЫР" onclick="food(this)"></dev> <button value="РЕЗУЛЬТАТ" onclick="itog(this), playPause()">РЕЗУЛЬТАТ</button>
+        <dev><input type="button" value="FRASS NICHT" onclick="njam(this)"></dev>
+        <dev><input type="button" value="MAUS" onclick="food(this)"></dev> <button value="ERGEBNIS" onclick="itog(this), playPause()">ERGEBNIS</button>
     </main>
     <section id="smotri">тут будет ваш ответ</section>
     <p></p>
@@ -74,7 +74,7 @@ document.getElementById("demo").innerHTML = "RUDI hat dieses Rätsel für Dich v
   <script>
     var myVideo = document.getElementById("video1");
     function playPause() {
-    if (f == 'РЕШЕНО')
+    if (f == 'RÄTSEL GELÖST')
     myVideo.play();
     else
     myVideo.pause();
