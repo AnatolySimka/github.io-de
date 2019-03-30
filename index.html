@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru" dir="ltr">
+<html lang="de" dir="ltr">
   <head>
     <meta charset="utf-8">
     <title>My site</title>
@@ -8,11 +8,11 @@
   </head>
   <body>
     <header>
-      <h1>RUDI Internet Seite</h1>
+      <h1>RUDI - seine Seite im NETZ</h1>
     </header>
     <main>
       <h2>RUDI IST EIN HÜBSCHER KATER!</h2>
-      <h3>DAS IST KLAR!</h3>
+      <h2>DAS IST KLAR!</h2>
       <table border="0">
             <td><img src="RUDI.jpg"></td>
       </table>
@@ -52,10 +52,10 @@ document.getElementById("demo").innerHTML = "RUDI hat dieses Rätsel für Dich v
         else if (d == 'HUND') {document.getElementById("smotri").innerHTML = 'WAS HAT HIER EIN HUND ZU SUCHEN!!!',
         document.getElementById("demo").innerHTML = 'FALSCH'
         f = 'RÄTSEL NICHT GELÖST'}
-        else if (b == 'FRASS NICHT') {document.getElementById("smotri").innerHTML = 'WIESO NICHT?!',
+        else if (b == 'FRASS NICHT') {document.getElementById("smotri").innerHTML = 'WIESO FRASS ICH NICHT?!',
         document.getElementById("demo").innerHTML = 'FALSCH'
         f = 'RÄTSEL NICHT GELÖST'}
-        else if (a == 'MAUS') {document.getElementById("smotri").innerHTML = 'MÄUSE WERDEN NICHT GEFRESSEN ABER ZUM HERRN MENSCHEN GEBRACHT!',
+        else if (a == 'MAUS') {document.getElementById("smotri").innerHTML = 'MÄUSE WERDEN NICHT GEFRESSEN'<br>'ABER ZUM HERRN MENSCHEN GEBRACHT!',
         document.getElementById("demo").innerHTML = 'FALSCH'
         f = 'RÄTSEL NICHT GELÖST'}
         else if (c == 'RUDI') {document.getElementById("smotri").innerHTML = 'RUDI KENNEN WIR NICHT!',
@@ -63,11 +63,11 @@ document.getElementById("demo").innerHTML = "RUDI hat dieses Rätsel für Dich v
         f = 'RÄTSEL NICHT GELÖST'}}
       </script>
         <dev><input type="button" id="kot" value="HUND" onclick="up(this)"></dev>
-        <dev><input type="button" value="RUDI" onclick="fido(this)"></dev>
+        <dev><input type="button" value="FIDO" onclick="fido(this)"></dev>
         <dev><input type="button" value="FRASS NICHT" onclick="njam(this)"></dev>
         <dev><input type="button" value="MAUS" onclick="food(this)"></dev> <button value="ERGEBNIS" onclick="itog(this), playPause()">ERGEBNIS</button>
     </main>
-    <section id="smotri">тут будет ваш ответ</section>
+    <section id="smotri">HIER WIRD DEINE ANTWORT ERSCHEINEN</section>
     <p></p>
   <video id="video1" width="713" height="400">
     <source src="kot.mp4" type="video/mp4">
