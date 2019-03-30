@@ -39,7 +39,7 @@ document.getElementById("demo").innerHTML = "RUDI hat dieses Rätsel für Dich v
         {input.value = input.value != 'FRASS NICHT' ? 'FRASS NICHT' : 'FRASS'
         b = input.value}
         function food(input)
-        {input.value = input.value != 'KÄSE' ? 'KÄSE' : 'MAUS'
+        {input.value = input.value != 'MAUS' ? 'MAUS' : 'KÄSE'
         a = input.value}
         function itog(input)
         {if (a == 'KÄSE' && b == 'FRASS' && c == 'RUDI' && d == 'KATER' && e == 'EIN')
@@ -65,7 +65,7 @@ document.getElementById("demo").innerHTML = "RUDI hat dieses Rätsel für Dich v
         <dev><input type="button" id="kot" value="HUND" onclick="up(this)"></dev>
         <dev><input type="button" value="FIDO" onclick="fido(this)"></dev>
         <dev><input type="button" value="FRASS NICHT" onclick="njam(this)"></dev>
-      <dev><input type="button" value="MAUS" onclick="food(this)"></dev> <dev> </dev> <button value="ERGEBNIS" onclick="itog(this), playPause()">ERGEBNIS</button>
+      <dev><input type="button" value="MAUS" onclick="food(this)"></dev> <dev> </dev> <dev> </dev> <button value="ERGEBNIS" onclick="itog(this), playPause()">ERGEBNIS</button>
     </main>
     <section id="smotri">HIER WIRD DEINE ANTWORT ERSCHEINEN</section>
     <p></p>
