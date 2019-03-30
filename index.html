@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ru" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>My site</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="./css/master.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <h1>Моя кошачья страница</h1>
+    </header>
+    <main>
+      <h2>FIDO - ОТЛИЧНЫЙ KOT!</h2>
+      <h3>ЭТО НЕСОМНЕННО!</h3>
+      <table border="0">
+            <td><img src="FIDO.jpg"></td>
+      </table>
+      <p></p>
+<form id="demo"></form>
+      <p></p>
+<script>
+document.getElementById("demo").innerHTML = "МОЯ МАЛЕНЬКАЯ ЗАДАЧА";
+</script>
+      <dev><input type="button" value="ВЫКЛ." onclick="dawn(this)"></dev>
+    <p></p>
+      <script>
+        a='СЫР', b='НЕ СЪЕЛ', c='RUDI', d='СОБАКА', e='ВЫКЛ.'
+        function dawn(input)
+        {input.value = input.value != 'ВЫКЛ.' ? 'ВЫКЛ.' : 'ВКЛ.'
+        e = input.value}
+        function up(input)
+        {input.value = input.value != 'СОБАКА' ? 'СОБАКА' : 'КОТ'
+        d = input.value}
+        function fido(input)
+        {input.value = input.value != 'RUDI' ? 'RUDI' : 'FIDO'
+        c = input.value}
+        function njam(input)
+        {input.value = input.value != 'СЪЕЛ' ? 'СЪЕЛ' : 'НЕ СЪЕЛ'
+        b = input.value}
+        function food(input)
+        {input.value = input.value != 'КОЛБАСУ' ? 'КОЛБАСУ' : 'СЫР'
+        a = input.value}
+        function itog(input)
+        {if (a == 'КОЛБАСУ' && b == 'СЪЕЛ' && c == 'FIDO' && d == 'КОТ' && e == 'ВКЛ.')
+        {document.getElementById("smotri").innerHTML = 'ПРАВИЛЬНО!',
+        document.getElementById("demo").innerHTML = 'ЗАДАЧА РЕШЕНА! Теперь FIDO может полизать валерьяночки!'
+        f = 'РЕШЕНО'}
+        else if (e == "ВЫКЛ.") {document.getElementById("smotri").innerHTML = 'ВКЛЮЧИ МЕНЯ!',
+        document.getElementById("demo").innerHTML = 'ВКЛЮЧИ КНОПКУ ВКЛ.!'
+        f = 'НЕ РЕШЕНО'}
+        else if (d == 'СОБАКА') {document.getElementById("smotri").innerHTML = 'КАКАЯ СОБАКА!!!',
+        document.getElementById("demo").innerHTML = 'НЕВЕРНОЕ РЕШЕНИЕ'
+        f = 'НЕ РЕШЕНО'}
+        else if (b == 'НЕ СЪЕЛ') {document.getElementById("smotri").innerHTML = 'КАК ЭТО НЕ СЪЕЛ?!',
+        document.getElementById("demo").innerHTML = 'НЕВЕРНОЕ РЕШЕНИЕ'
+        f = 'НЕ РЕШЕНО'}
+        else if (a == 'СЫР') {document.getElementById("smotri").innerHTML = 'СЫР НЕ КАТИТ!',
+        document.getElementById("demo").innerHTML = 'НЕВЕРНОЕ РЕШЕНИЕ'
+        f = 'НЕ РЕШЕНО'}
+        else if (c == 'RUDI') {document.getElementById("smotri").innerHTML = 'RUDI НЕ ИЗ НАШЕГО ДВОРА!',
+        document.getElementById("demo").innerHTML = 'НЕВЕРНОЕ РЕШЕНИЕ'
+        f = 'НЕ РЕШЕНО'}}
+      </script>
+        <dev><input type="button" id="kot" value="СОБАКА" onclick="up(this)"></dev>
+        <dev><input type="button" value="RUDI" onclick="fido(this)"></dev>
+        <dev><input type="button" value="НЕ СЪЕЛ" onclick="njam(this)"></dev>
+        <dev><input type="button" value="СЫР" onclick="food(this)"></dev> <button value="РЕЗУЛЬТАТ" onclick="itog(this), playPause()">РЕЗУЛЬТАТ</button>
+    </main>
+    <section id="smotri">тут будет ваш ответ</section>
+    <p></p>
+  <video id="video1" width="713" height="400">
+    <source src="kot.mp4" type="video/mp4">
+  <script>
+    var myVideo = document.getElementById("video1");
+    function playPause() {
+    if (f == 'РЕШЕНО')
+    myVideo.play();
+    else
+    myVideo.pause();
+}
+</script>
+  </body>
+</html>

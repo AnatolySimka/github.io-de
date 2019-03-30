@@ -1,0 +1,59 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+body {
+  background: #aac;
+  color: #000;
+  font-family: 'Open Sans', sans-serif;
+}
+main {
+  font-style: normal;
+  font-weight: bold;
+}
+main h2 {
+  background: #aac;
+  color: #000;
+}
+main h1 {
+  background: #aac;
+  color: #000;
+  font-weight: bold;
+}
+body > header > h1 {
+color: #000;
+font-weight: bold;
+}
+section > img {
+  height: 30%;width: 130px;
+  border: 3px solid #0F0;
+}
+body > table > td {
+  background: #aac;
+}
+button {
+  background: #000000;
+  border: 3px solid #0F0;
+  height:36px;width:136px;
+  color: #FFF;
+  font-weight: bold;
+}
+input {
+  background: #000000;
+  border: 3px solid #0F0;
+  height:36px;width:136px;
+  color: #FFF;
+  font-weight: bold;
+}
+section {
+  background: #aac;
+  color: #F00;
+  font-size: 44px;
+  font-variant:
+  font-weight: bold;
+}
+form {
+  background: #aac;
+  color: #000;
+  font-size: 26px;
+  font-variant:
+  font-weight: bold;
+}
